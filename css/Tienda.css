@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/*Estilo Menú*/
+header{
+    width: 100%;
+    background: #E79B9D;
+    display: grid;
+    grid-template-rows: 1;
+
+    z-index: 999;
+}
+
+div.sub-header{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: right;
+    padding-right: 40px;
+}
+
+header img{
+    width: 30px;
+    height: 30px;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-left: 1px solid white;
+}
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu li a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li:hover{
+    background: rgba(0,0,0,0.3);
+}
+
+.menu li a.presente{
+    text-decoration: 2px underline;
+}
+
+/*menu2*/
+
+.menu2{
+    background-color: #B3C2E6;
+    z-index: 999;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+.sub-menu2.abajo{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.menu2 label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 50px;
+    border-left: 1px solid white;
+}
+
+.menu2 ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu2 li a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.menu2 li:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:768px) {
+
+    div.sub-header{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 10%;
+    }
+
+    header label {
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        background: #039BE5;
+        width: 100%;
+        margin-left: -100%;
+        transition: all 0.5s;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-top: 1px solid white;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+
+    #btn-menu:checked ~ .menu2 {
+        margin: 0;
+    }
+
+    .menu2 ul{
+        flex-direction: column;
+    }
+}
+
+/*Finaliza Estilo Menú*/
+
+/*Inicia Portada*/
+
+.portada{
+    background-color: #B4D2D4;
+    height: 400px;
+    display: grid;
+    align-items: center;
+}
+
+.portada h1{
+    font-family: 'Titan One', cursiva;
+    font-weight: inherit;
+    font-size: 140px;
+    text-align: center;
+    color: white;
+    -webkit-text-stroke: 5px #E79B9D;
+}
+
+/*Finaliza Portada*/
+
+/*Inicia Contenido Total*/
+
+.contenido-total{
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*PRODUCTOS*/
+
+.items{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.item.shadow{
+    border: 5px solid #99c2c5;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    height: 100%;
+    margin-top: 20px;
+    background-color: #ffb7c2;
+}
+
+.col-12{
+    margin-bottom: 30px;
+}
+
+.item-image{
+    width: 140px;
+    height: 90px;
+}
+
+.item-button{
+    background-color: #b7e28f;
+    color: black;
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.item-button i{
+    font-size: 60px;
+    text-align: center;
+}
+
+/* ? SHOPPING CART */
+
+.sub-shopping-cart.abajo{
+    position: fixed;
+    top: 0;
+    margin-top: 65px;
+}
+
+.shopping-cart-items {
+    padding: 20px 0px;
+  }
+  
+  .shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+  }
+  
+  .shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+  }
+  
+  .shopping-cart-total {
+    min-height: 96px;
+  }
+
+/*Finaliza Contenido Total*/
+
+
+/*Responsive para Tablets*/
+
+@media screen and (max-width:1280px) and (min-width:720px){
+    .items{
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+}
