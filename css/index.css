@@ -34,6 +34,7 @@ body{
     width: 75%;
     margin: 0 auto;
     text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
 }
 
 .menu a{
@@ -41,8 +42,11 @@ body{
     color: white;
 }
 
-.menu a:hover{
-    
+.sección:hover{
+    transform: translateY(-8px);
+    background: rgb(255, 254, 192);
+    box-shadow: black 0.1em 0.2em 0.4em;
+    color: gray;
 }
 
 .sección{
