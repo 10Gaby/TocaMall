@@ -6,6 +6,7 @@ body{
     background-image: url(../media/index/Portada.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Balsamiq Sans', cursive;
 }
 
 .title{  
@@ -34,7 +35,6 @@ body{
     width: 75%;
     margin: 0 auto;
     text-align: center;
-    font-family: 'Balsamiq Sans', cursive;
 }
 
 .menu a{
