@@ -61,3 +61,28 @@ body{
     margin: 10px;
     font-size: 50px;
 }
+
+@media screen and (max-width: 1080px) {
+ .title h1{
+   font-size: 60px;
+ }
+ 
+ .menu{
+   grid-template-columns: 100%;
+ }
+ 
+ body{
+   background-repeat: repeat-y;
+ }
+  .portada{
+    height: auto;
+    padding-bottom: 50px;
+  }
+ .sección{
+   margin: 10px;
+ }
+ 
+ .title{
+   padding: 50px;
+ }
+}
