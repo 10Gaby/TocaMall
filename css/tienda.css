@@ -270,3 +270,22 @@ header label:hover{
         grid-template-columns: 33.33% 33.33% 33.33%;
     }
 }
+
+@media screen and (max-width: 1080px){
+    .contenido-total{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .items{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .portada h1{
+        font-size: 80px;
+    }
+    .portada br{
+        display: initial;
+        -webkit-text-stroke: 3px #E79B9D;
+    }
+}
