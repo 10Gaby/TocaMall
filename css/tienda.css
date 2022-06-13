@@ -10,7 +10,7 @@ body{
 /*Estilo Menú*/
 header{
     width: 100%;
-    background: #E79B9D;
+    background: #9093DA;
     display: grid;
     grid-template-rows: 1;
 
@@ -72,7 +72,7 @@ header label:hover{
 /*menu2*/
 
 .menu2{
-    background-color: #B3C2E6;
+    background-color: #9093DA;
     z-index: 999;
     width: 100%;
     display: grid;
@@ -160,7 +160,7 @@ header label:hover{
 /*Inicia Portada*/
 
 .portada{
-    background-color: #B4D2D4;
+    background-image: url(../media/index/Portada.jpeg);
     height: 400px;
     display: grid;
     align-items: center;
@@ -168,11 +168,14 @@ header label:hover{
 
 .portada h1{
     font-family: 'Titan One', cursiva;
-    font-weight: inherit;
-    font-size: 140px;
+    font-size: 8em;
     text-align: center;
     color: white;
-    -webkit-text-stroke: 5px #E79B9D;
+    -webkit-text-stroke: 5px #E1677E;
+    background: rgba(0,0,0,0.4);
+    height: 100%;
+    align-items: center;
+    display: grid;
 }
 
 /*Finaliza Portada*/
@@ -275,6 +278,8 @@ header label:hover{
     .contenido-total{
         display: grid;
         grid-template-columns: 100%;
+        justify-content: center;
+        justify-items: center;
     }
 
     .items{
@@ -282,7 +287,8 @@ header label:hover{
         grid-template-columns: 100%;
     }
     .portada h1{
-        font-size: 80px;
+        font-size: 3em;
+        -webkit-text-stroke: 2px #E1677E;
     }
     .portada br{
         display: initial;

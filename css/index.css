@@ -16,7 +16,6 @@ body{
 .portada{
     width: 100%;
     height: 100%;
-    position: absolute;
     background:rgb(0, 0, 0, 0.3);
 }
 
@@ -24,7 +23,7 @@ body{
     font-family: 'Titan One', cursiva;
     font-weight: lighter;
     font-size: 10em;
-    color: #E79B9D;
+    color: #A3DFD3;
     -webkit-text-stroke: 5px white;
     text-align: center;
 }
@@ -44,15 +43,15 @@ body{
 
 .sección:hover{
     transform: translateY(-8px);
-    background: rgb(255, 254, 192);
+    background: #A3DFD3;
     box-shadow: black 0.1em 0.2em 0.4em;
     color: gray;
 }
 
 .sección{
-    background: pink;
-    margin: 40px;
-    padding: 20px;
+    background-color: #9093DA;
+    margin: 30px;
+    padding: 10px;
     border: 5px solid white;
     border-radius: 8px;
 }
