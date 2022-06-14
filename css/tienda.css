@@ -280,7 +280,7 @@ header label:hover{
 @media screen and (max-width: 1080px){
     .contenido-total{
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 50% 50%;
         justify-content: center;
         justify-items: center;
     }
@@ -296,5 +296,11 @@ header label:hover{
     .portada br{
         display: initial;
         -webkit-text-stroke: 3px #E79B9D;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .contenido-total{
+        grid-template-columns: 100%;
     }
 }
