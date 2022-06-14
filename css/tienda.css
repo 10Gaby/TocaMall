@@ -198,13 +198,14 @@ header label:hover{
 }
 
 .item.shadow{
-    border: 5px solid #99c2c5;
+    display: grid;
+    justify-content: center;
     border-radius: 8px;
-    padding: 20px;
+    padding: 10px;
     width: 200px;
     height: 100%;
     margin-top: 20px;
-    background-color: #ffb7c2;
+    background-color: #9BA7C2;
 }
 
 .col-12{
@@ -214,6 +215,8 @@ header label:hover{
 .item-image{
     width: 140px;
     height: 90px;
+    margin: 0 auto;
+    display: block;
 }
 
 .item-button{
