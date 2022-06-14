@@ -190,6 +190,24 @@ header label:hover{
     margin-bottom: 50px;
 }
 
+.float-cart{
+    position: fixed;
+    display: grid;
+    justify-content: right;
+    right: 50px;
+    bottom: 30px;
+    color: black;
+    background-color: #a8da7a;
+    padding: 20px;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.float-cart:hover{
+    color: white;
+    text-decoration: none;
+}
+
 /*PRODUCTOS*/
 
 .items{
