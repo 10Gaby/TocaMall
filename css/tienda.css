@@ -1,5 +1,9 @@
 *{
-    margin: 0;
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body{
@@ -7,153 +11,6 @@ body{
     font-family: 'Balsamiq Sans', cursive;
 }
 
-/*Estilo Menú*/
-header{
-    width: 100%;
-    background: #9093DA;
-    display: grid;
-    grid-template-rows: 1;
-
-    z-index: 999;
-}
-
-div.sub-header{
-    display: grid;
-    grid-template-columns: 100%;
-    justify-items: right;
-    padding-right: 40px;
-}
-
-header img{
-    width: 30px;
-    height: 30px;
-}
-
-#btn-menu{
-    display: none;
-}
-
-header label{
-    display: none;
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-    border-left: 1px solid white;
-}
-
-header label:hover{
-    cursor: pointer;
-    background: rgba(0,0,0,0.3);
-}
-
-.menu ul {
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-.menu li a{
-    display: block;
-    padding: 15px 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-.menu li:hover{
-    background: rgba(0,0,0,0.3);
-}
-
-.menu li a.presente{
-    text-decoration: 2px underline;
-}
-
-/*menu2*/
-
-.menu2{
-    background-color: #9093DA;
-    z-index: 999;
-    width: 100%;
-    display: grid;
-    justify-items: center;
-}
-
-.sub-menu2.abajo{
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-}
-
-.menu2 label{
-    display: none;
-    width: 30px;
-    height: 30px;
-    padding: 50px;
-    border-left: 1px solid white;
-}
-
-.menu2 ul {
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-.menu2 li a{
-    font-size: 1.3em;
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-}
-
-.menu2 li:hover{
-    text-decoration: underline;
-}
-
-@media (max-width:768px) {
-
-    div.sub-header{
-    width: 100%;
-
-    display: grid;
-    grid-template-columns: 10%;
-    }
-
-    header label {
-        display: block;
-    }
-
-    .menu{
-        position: absolute;
-        background: #039BE5;
-        width: 100%;
-        margin-left: -100%;
-        transition: all 0.5s;
-    }
-
-    .menu ul{
-        flex-direction: column;
-    }
-
-    .menu li{
-        border-top: 1px solid white;
-    }
-
-    #btn-menu:checked ~ .menu {
-        margin: 0;
-    }
-
-    #btn-menu:checked ~ .menu2 {
-        margin: 0;
-    }
-
-    .menu2 ul{
-        flex-direction: column;
-    }
-}
 
 /*Finaliza Estilo Menú*/
 
@@ -194,8 +51,8 @@ header label:hover{
     position: fixed;
     display: grid;
     justify-content: right;
-    right: 50px;
-    bottom: 30px;
+    right: 20px;
+    bottom: 20px;
     color: black;
     background-color: #a8da7a;
     padding: 20px;

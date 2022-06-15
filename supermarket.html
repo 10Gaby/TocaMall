@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/tienda.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="shortcut icon" href="#"> 
 
     <!--Iconos-->
@@ -23,50 +24,97 @@
 
 <body>
     <header>
-
-        <div class="sub-header">
+        <div class="containerM">
+            <input type="checkbox" name="" id="check">
             
-        <div class="menú">
+            <div class="logo-container">
+                <h3 class="logo"><span>Toca</span>Mall</h3>
+            </div>
 
-            <input type="checkbox" id="btn-menu">
-        <label for="btn-menu"><img src="Icono Menú.png" alt=""></label>
-    
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#" class="presente">SuperMarket</a></li>
-                <li><a href="#">Restaurantes</a></li>
-                <li><a href="#">Mobiliario</a></li>
-                <li><a href="#">Ropa</a></li>
-                <li><a href="#">Artículos</a></li>
-            </ul>
-        </nav>
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="supermarket.html">SuperMarket<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="supermarket.html#proteinas">Proteínas</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="supermarket.html#lacteos">Lacteos</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="supermarket.html#cereales">Cereales</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="supermarket.html#snacks">Bebidas y Snacks</a>
+                                    </li>
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.1s">
+                            <a href="#">Restaurantes<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#">Link 1</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Link 2</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Link 3<i class="fas fa-caret-down"></i></a>
+                                        <div class="dropdown second">
+                                            <ul>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Link 1</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Link 2</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Link 3</a>
+                                                </li>
+                                                <div class="arrow"></div>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Link 4</a>
+                                    </li>
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="#">Mobiliario</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="#">Ropa</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="#">Artículos</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
         </div>
     </header>
 
     <section class="portada">
         <h1>SuperMarket</h1>
-    </section>
-
-    <section class="menu2">
-        <div class="sub-menu2">
-            
-            <div class="menu2">
-    
-                <input type="checkbox" id="btn-menu">
-            <label for="btn-menu"><img src="media/Menú.svg" alt="icono menú"></label>
-        
-            <nav class="menu2">
-                <ul>
-                    <li><a href="#proteinas">Proteínas</a></li>
-                    <li><a href="#lacteos">Lacteos</a></li>
-                    <li><a href="#cereales">Cereales</a></li>
-                    <li><a href="#panadería">Panadería</a></li>
-                    <li><a href="#snacks">Bebidas y Snacks</a></li>
-                </ul>
-            </nav>
-            </div>
-        </div>
     </section>
 
     <a href="#carrito" class="float-cart"><i class="fas fa-shopping-cart" _mstvisible="2"></i></a>
@@ -526,6 +574,7 @@
     <!-- END SECTION SHOPPING CART -->
 </section>
 
+    <script src="js/menu.js" type="text/javascript"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
