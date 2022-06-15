@@ -137,7 +137,7 @@ header{
 .dropdown-link > a{
     display: flex;
     background-color: #fff;
-    color: #3498db;
+    color: #9093DA;
     padding: .5rem 1rem;
     font-size: .9rem;
     align-items: center;
@@ -146,7 +146,7 @@ header{
 }
 
 .dropdown-link:hover > a{
-    background-color: #3498db;
+    background-color: #9093DA;
     color: #fff;
 }
 
@@ -335,7 +335,7 @@ header{
 
     .nav-link:hover > a{
         transform: scale(1);
-        background-color: #50a9d6;
+        background-color: #99CEE0;
     }
 
     .dropdown, .dropdown.second{
@@ -347,7 +347,7 @@ header{
         pointer-events: auto;
         width: 100%;
         padding: 0;
-        background-color: #3183ac;
+        background-color: #87ADDB;
         display: none;
     }
     
